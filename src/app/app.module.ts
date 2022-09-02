@@ -10,6 +10,9 @@ import { ProductComponent } from './components/product/product.component';
 import { HomeComponent } from './components/home/home.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { AuthGuardService } from './guards/auth.guard.service';
+import { ProductAddComponent } from './components/product/product-add/product-add.component';
+import { ProductEditComponent } from './components/product/product-edit/product-edit.component';
+import { ProductViewComponent } from './components/product/product-view/product-view.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import { AuthGuardService } from './guards/auth.guard.service';
     LoginComponent,
     ProductComponent,
     HomeComponent,
-    ContactComponent
+    ContactComponent,
+    ProductAddComponent,
+    ProductEditComponent,
+    ProductViewComponent
   ],
   imports: [
     BrowserModule,

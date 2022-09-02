@@ -26,7 +26,8 @@ export class AuthService {
   }
 
    isAdminUser():boolean {
-    if (this.userName=='Admin') {
+   
+    if (this.userName.toLowerCase()==='admin') {
         return true; 
     }
     return false;

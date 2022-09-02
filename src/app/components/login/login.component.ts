@@ -35,7 +35,6 @@ export class LoginComponent implements OnInit {
   onSubmit():void {
  
     this.authService.login(this.loginForm.controls['username'].value, this.loginForm.controls['password'].value).subscribe(data => {
-           console.log( 'return to '+ this.retUrl);
            if (this.retUrl!=null) {
                 this.router.navigate( [this.retUrl]);
            } else {
